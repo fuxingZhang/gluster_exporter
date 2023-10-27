@@ -2,6 +2,7 @@ package gluster
 
 import (
 	"gluster_exporter/pkg/consts"
+	"gluster_exporter/pkg/logger"
 )
 
 // EnableVolumeProfiling enables profiling for a volume
@@ -15,9 +16,10 @@ func (g *GD1) EnableVolumeProfiling(volume Volume) error {
 		}
 	} else {
 		if value == "off" {
-			// log.WithFields(log.Fields{
-			// 	"volume": volume.Name,
-			// }).Debug("Volume profiling is explicitly disabled. No profile metrics would be exposed.")
+			logger.Debug(
+				"msg", "Volume profiling is explicitly disabled. No profile metrics would be exposed.",
+				"volume", volume.Name,
+			)
 		}
 	}
 	return nil

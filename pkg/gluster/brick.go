@@ -79,9 +79,9 @@ func getLVS() ([]LVMStat, []ThinPoolStat, error) {
 		return lvmDet, thinPool, err
 	}
 	var vgReport VGReport
-	if err1 := json.Unmarshal(out, &vgReport); err1 != nil {
-		// log.WithError(err1).Debug("Error parsing lvm usage details")
-		return lvmDet, thinPool, err1
+	if err := json.Unmarshal(out, &vgReport); err != nil {
+		logger.Debug("msg", "Error parsing lvm usage details", "err", err)
+		return lvmDet, thinPool, err
 	}
 
 	for _, vg := range vgReport.Report[0].Vgs {
