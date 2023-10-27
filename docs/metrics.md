@@ -1,8 +1,8 @@
-## Metrics Exported by Gluster Prometheus exporter
+# Metrics Exported by Gluster Prometheus exporter
 
-### collector.brick
+## collector.brick
 
-#### gluster_brick_capacity_used_bytes
+### gluster_brick_capacity_used_bytes
 
 Used capacity of gluster bricks in bytes
 
@@ -15,7 +15,7 @@ Used capacity of gluster bricks in bytes
 | volume     | Volume Name     |
 | subvolume  | Sub Volume name |
 
-#### gluster_brick_capacity_free_bytes
+### gluster_brick_capacity_free_bytes
 
 Free capacity of gluster bricks in bytes
 
@@ -28,7 +28,7 @@ Free capacity of gluster bricks in bytes
 | volume     | Volume Name     |
 | subvolume  | Sub Volume name |
 
-#### gluster_brick_capacity_bytes_total
+### gluster_brick_capacity_bytes_total
 
 Total capacity of gluster bricks in bytes
 
@@ -41,7 +41,7 @@ Total capacity of gluster bricks in bytes
 | volume     | Volume Name     |
 | subvolume  | Sub Volume name |
 
-#### gluster_brick_inodes_total
+### gluster_brick_inodes_total
 
 Total no of inodes of gluster brick disk
 
@@ -54,7 +54,7 @@ Total no of inodes of gluster brick disk
 | volume     | Volume Name     |
 | subvolume  | Sub Volume name |
 
-#### gluster_brick_inodes_free
+### gluster_brick_inodes_free
 
 Free no of inodes of gluster brick disk
 
@@ -67,7 +67,7 @@ Free no of inodes of gluster brick disk
 | volume     | Volume Name     |
 | subvolume  | Sub Volume name |
 
-#### gluster_brick_inodes_used
+### gluster_brick_inodes_used
 
 Used no of inodes of gluster brick disk
 
@@ -80,7 +80,7 @@ Used no of inodes of gluster brick disk
 | volume     | Volume Name     |
 | subvolume  | Sub Volume name |
 
-#### gluster_subvol_capacity_used_bytes
+### gluster_subvol_capacity_used_bytes
 
 Effective used capacity of gluster subvolume in bytes
 
@@ -90,7 +90,7 @@ Effective used capacity of gluster subvolume in bytes
 | volume     | Volume Name     |
 | subvolume  | Sub volume name |
 
-#### gluster_subvol_capacity_total_bytes
+### gluster_subvol_capacity_total_bytes
 
 Effective total capacity of gluster subvolume in bytes
 
@@ -100,7 +100,7 @@ Effective total capacity of gluster subvolume in bytes
 | volume     | Volume Name     |
 | subvolume  | Sub volume name |
 
-#### gluster_brick_lv_size_bytes
+### gluster_brick_lv_size_bytes
 
 Bricks LV size Bytes
 
@@ -116,7 +116,7 @@ Bricks LV size Bytes
 | lv_path    | LV Path         |
 | lv_uuid    | UUID of LV      |
 
-#### gluster_brick_lv_percent
+### gluster_brick_lv_percent
 
 Bricks LV usage percent
 
@@ -132,7 +132,7 @@ Bricks LV usage percent
 | lv_path    | LV Path         |
 | lv_uuid    | UUID of LV      |
 
-#### gluster_brick_lv_metadata_size_bytes
+### gluster_brick_lv_metadata_size_bytes
 
 Bricks LV metadata size Bytes
 
@@ -148,7 +148,7 @@ Bricks LV metadata size Bytes
 | lv_path    | LV Path         |
 | lv_uuid    | UUID of LV      |
 
-#### gluster_brick_lv_metadata_percent
+### gluster_brick_lv_metadata_percent
 
 Bricks LV metadata usage percent
 
@@ -164,7 +164,7 @@ Bricks LV metadata usage percent
 | lv_path    | LV Path         |
 | lv_uuid    | UUID of LV      |
 
-#### gluster_vg_extent_total_count
+### gluster_vg_extent_total_count
 
 VG extent total count
 
@@ -180,7 +180,7 @@ VG extent total count
 | lv_path    | LV Path         |
 | lv_uuid    | UUID of LV      |
 
-#### gluster_vg_extent_alloc_count
+### gluster_vg_extent_alloc_count
 
 VG extent allocated count
 
@@ -196,7 +196,7 @@ VG extent allocated count
 | lv_path    | LV Path         |
 | lv_uuid    | UUID of LV      |
 
-#### gluster_thinpool_data_total_bytes
+### gluster_thinpool_data_total_bytes
 
 Thin pool size Bytes
 
@@ -210,7 +210,7 @@ Thin pool size Bytes
 | subvolume     | Name of the Subvolume    |
 | brick_path    | Brick Path               |
 
-#### gluster_thinpool_data_used_bytes
+### gluster_thinpool_data_used_bytes
 
 Thin pool data used Bytes
 
@@ -224,7 +224,7 @@ Thin pool data used Bytes
 | subvolume     | Name of the Subvolume    |
 | brick_path    | Brick Path               |
 
-#### gluster_thinpool_metadata_total_bytes
+### gluster_thinpool_metadata_total_bytes
 
 Thin pool metadata size Bytes
 
@@ -238,7 +238,7 @@ Thin pool metadata size Bytes
 | subvolume     | Name of the Subvolume    |
 | brick_path    | Brick Path               |
 
-#### gluster_thinpool_metadata_used_bytes
+### gluster_thinpool_metadata_used_bytes
 
 Thin pool metadata used Bytes
 
@@ -252,9 +252,9 @@ Thin pool metadata used Bytes
 | subvolume     | Name of the Subvolume    |
 | brick_path    | Brick Path               |
 
-### collector.brick_status
+## collector.brick_status
 
-#### gluster_brick_up
+### gluster_brick_up
 
 Brick up (1-up, 0-down)
 
@@ -267,9 +267,9 @@ Brick up (1-up, 0-down)
 | peer_id    | Peer ID             |
 | pid        | Process ID of brick |
 
-### collector.peer_counts
+## collector.peer_counts
 
-#### gluster_pv_count
+### gluster_pv_count
 
 No: of Physical Volumes
 
@@ -279,7 +279,7 @@ No: of Physical Volumes
 | name       | Metric name, for which data is collected              |
 | peer_id    | Peer ID of the host on which this metric is collected |
 
-#### gluster_lv_count
+### gluster_lv_count
 
 No: of Logical Volumes in a Volume Group
 
@@ -290,7 +290,7 @@ No: of Logical Volumes in a Volume Group
 | peer_id    | Peer ID of the host on which this metric is collected |
 | vg_name    | Volume Group Name associated with the metric          |
 
-#### gluster_vg_count
+### gluster_vg_count
 
 No: of Volume Groups
 
@@ -300,7 +300,7 @@ No: of Volume Groups
 | name       | Metric name, for which data is collected              |
 | peer_id    | Peer ID of the host on which this metric is collected |
 
-#### gluster_thinpool_count
+### gluster_thinpool_count
 
 No: of thinpools in a Volume Group
 
@@ -311,9 +311,9 @@ No: of thinpools in a Volume Group
 | peer_id    | Peer ID of the host on which this metric is collected |
 | vg_name    | Volume Group Name associated with the metric          |
 
-### collector.peer_info
+## collector.peer_info
 
-#### gluster_peer_count
+### gluster_peer_count
 
 Number of peers in cluster
 
@@ -321,7 +321,7 @@ Number of peers in cluster
 | -------- | ----------------------------------------------------------------- |
 | instance | Hostname of the gluster-prometheus instance providing this metric |
 
-#### gluster_peer_status
+### gluster_peer_status
 
 Peer status info
 
@@ -331,7 +331,7 @@ Peer status info
 | hostname | Hostname of the peer for which data is collected                  |
 | uuid     | Uuid of the peer for which data is collected                      |
 
-#### gluster_peer_connected
+### gluster_peer_connected
 
 Peer connection status
 
@@ -341,9 +341,9 @@ Peer connection status
 | hostname | Hostname of the peer for which data is collected                  |
 | uuid     | Uuid of the peer for which data is collected                      |
 
-### collector.ps
+## collector.ps
 
-#### gluster_cpu_percentage
+### gluster_cpu_percentage
 
 CPU percentage of Gluster process. One metric will be exposed for each process. Note: values of labels will be empty if not applicable to that process. For example, glusterd process will not have labels for volume or brick_path. It is the CPU time used divided by the time the process has been running (cputime/realtime ratio), expressed as a percentage.
 
@@ -355,7 +355,7 @@ CPU percentage of Gluster process. One metric will be exposed for each process. 
 | brick_path | Brick Path                                                    |
 | name       | Name of the Gluster process(Ex: `glusterfsd`, `glusterd` etc) |
 
-#### gluster_memory_percentage
+### gluster_memory_percentage
 
 Memory percentage of Gluster process. One metric will be exposed for each process. Note: values of labels will be empty if not applicable to that process. For example, glusterd process will not have labels for volume or brick_path. It is the ratio of the process’s resident set size to the physical memory on the machine, expressed as a percentage
 
@@ -367,7 +367,7 @@ Memory percentage of Gluster process. One metric will be exposed for each proces
 | brick_path | Brick Path                                                    |
 | name       | Name of the Gluster process(Ex: `glusterfsd`, `glusterd` etc) |
 
-#### gluster_resident_memory_bytes
+### gluster_resident_memory_bytes
 
 Resident Memory of Gluster process in bytes. One metric will be exposed for each process. Note: values of labels will be empty if not applicable to that process. For example, glusterd process will not have labels for volume or brick_path.
 
@@ -379,7 +379,7 @@ Resident Memory of Gluster process in bytes. One metric will be exposed for each
 | brick_path | Brick Path                                                    |
 | name       | Name of the Gluster process(Ex: `glusterfsd`, `glusterd` etc) |
 
-#### gluster_virtual_memory_bytes
+### gluster_virtual_memory_bytes
 
 Virtual Memory of Gluster process in bytes. One metric will be exposed for each process. Note: values of labels will be empty if not applicable to that process. For example, glusterd process will not have labels for volume or brick_path.
 
@@ -391,7 +391,7 @@ Virtual Memory of Gluster process in bytes. One metric will be exposed for each 
 | brick_path | Brick Path                                                    |
 | name       | Name of the Gluster process(Ex: `glusterfsd`, `glusterd` etc) |
 
-#### gluster_elapsed_time_seconds
+### gluster_elapsed_time_seconds
 
 Elapsed Time or Uptime of Gluster processes in seconds. One metric will be exposed for each process. Note: values of labels will be empty if not applicable to that process. For example, glusterd process will not have labels for volume or brick_path.
 
@@ -403,9 +403,9 @@ Elapsed Time or Uptime of Gluster processes in seconds. One metric will be expos
 | brick_path | Brick Path                                                    |
 | name       | Name of the Gluster process(Ex: `glusterfsd`, `glusterd` etc) |
 
-### collector.volume_counts
+## collector.volume_counts
 
-#### gluster_volume_total_count
+### gluster_volume_total_count
 
 Total no of volumes
 
@@ -413,7 +413,7 @@ Total no of volumes
 | ---------- | ----------- |
 | cluster_id | Cluster ID  |
 
-#### gluster_volume_created_count
+### gluster_volume_created_count
 
 Freshly created no of volumes
 
@@ -421,7 +421,7 @@ Freshly created no of volumes
 | ---------- | ----------- |
 | cluster_id | Cluster ID  |
 
-#### gluster_volume_started_count
+### gluster_volume_started_count
 
 Total no of started volumes
 
@@ -429,7 +429,7 @@ Total no of started volumes
 | ---------- | ----------- |
 | cluster_id | Cluster ID  |
 
-#### gluster_volume_brick_count
+### gluster_volume_brick_count
 
 Total no of bricks in volume
 
@@ -438,7 +438,7 @@ Total no of bricks in volume
 | cluster_id | Cluster ID  |
 | volume     | Volume Name |
 
-#### gluster_volume_snapshot_brick_count_total
+### gluster_volume_snapshot_brick_count_total
 
 Total count of snapshots bricks for volume
 
@@ -447,7 +447,7 @@ Total count of snapshots bricks for volume
 | cluster_id | Cluster ID  |
 | volume     | Volume Name |
 
-#### gluster_volume_snapshot_brick_count_active
+### gluster_volume_snapshot_brick_count_active
 
 Total active count of snapshots bricks for volume
 
@@ -456,7 +456,7 @@ Total active count of snapshots bricks for volume
 | cluster_id | Cluster ID  |
 | volume     | Volume Name |
 
-#### gluster_volume_up
+### gluster_volume_up
 
 Volume is started or not (1-started, 0-not started)
 
@@ -465,9 +465,9 @@ Volume is started or not (1-started, 0-not started)
 | cluster_id | Cluster ID  |
 | volume     | Volume Name |
 
-### collector.volume_heal
+## collector.volume_heal
 
-#### gluster_volume_heal_count
+### gluster_volume_heal_count
 
 self heal count for volume
 
@@ -478,7 +478,7 @@ self heal count for volume
 | brick_path | Brick Path     |
 | host       | Hostname or IP |
 
-#### gluster_volume_split_brain_heal_count
+### gluster_volume_split_brain_heal_count
 
 self heal count for volume in split brain
 
@@ -489,9 +489,9 @@ self heal count for volume in split brain
 | brick_path | Brick Path     |
 | host       | Hostname or IP |
 
-### collector.volume_profile
+## collector.volume_profile
 
-#### gluster_volume_profile_total_reads
+### gluster_volume_profile_total_reads
 
 Total no of reads
 
@@ -501,7 +501,7 @@ Total no of reads
 | volume     | Volume name |
 | brick      | Brick Name  |
 
-#### gluster_volume_profile_total_writes
+### gluster_volume_profile_total_writes
 
 Total no of writes
 
@@ -511,7 +511,7 @@ Total no of writes
 | volume     | Volume name |
 | brick      | Brick Name  |
 
-#### gluster_volume_profile_duration_secs
+### gluster_volume_profile_duration_secs
 
 Duration
 
@@ -521,7 +521,7 @@ Duration
 | volume     | Volume name |
 | brick      | Brick Name  |
 
-#### gluster_volume_profile_total_reads_interval
+### gluster_volume_profile_total_reads_interval
 
 Total no of reads for interval stats
 
@@ -531,7 +531,7 @@ Total no of reads for interval stats
 | volume     | Volume name |
 | brick      | Brick Name  |
 
-#### gluster_volume_profile_total_writes_interval
+### gluster_volume_profile_total_writes_interval
 
 Total no of writes for interval stats
 
@@ -541,7 +541,7 @@ Total no of writes for interval stats
 | volume     | Volume name |
 | brick      | Brick Name  |
 
-#### gluster_volume_profile_duration_secs_interval
+### gluster_volume_profile_duration_secs_interval
 
 Duration for interval stats
 
@@ -551,7 +551,7 @@ Duration for interval stats
 | volume     | Volume name |
 | brick      | Brick Name  |
 
-#### gluster_volume_profile_fop_hits
+### gluster_volume_profile_fop_hits
 
 Cumulative FOP hits
 
@@ -563,7 +563,7 @@ Cumulative FOP hits
 | host       | Hostname or IP      |
 | fop        | File Operation name |
 
-#### gluster_volume_profile_fop_avg_latency
+### gluster_volume_profile_fop_avg_latency
 
 Cumulative FOP avergae latency
 
@@ -575,7 +575,7 @@ Cumulative FOP avergae latency
 | host       | Hostname or IP      |
 | fop        | File Operation name |
 
-#### gluster_volume_profile_fop_min_latency
+### gluster_volume_profile_fop_min_latency
 
 Cumulative FOP min latency
 
@@ -587,7 +587,7 @@ Cumulative FOP min latency
 | host       | Hostname or IP      |
 | fop        | File Operation name |
 
-#### gluster_volume_profile_fop_max_latency
+### gluster_volume_profile_fop_max_latency
 
 Cumulative FOP max latency
 
@@ -599,7 +599,7 @@ Cumulative FOP max latency
 | host       | Hostname or IP      |
 | fop        | File Operation name |
 
-#### gluster_volume_profile_fop_hits_interval
+### gluster_volume_profile_fop_hits_interval
 
 Interval based FOP hits
 
@@ -611,7 +611,7 @@ Interval based FOP hits
 | host       | Hostname or IP      |
 | fop        | File Operation name |
 
-#### gluster_volume_profile_fop_avg_latency_interval
+### gluster_volume_profile_fop_avg_latency_interval
 
 Interval based FOP average latency
 
@@ -623,7 +623,7 @@ Interval based FOP average latency
 | host       | Hostname or IP      |
 | fop        | File Operation name |
 
-#### gluster_volume_profile_fop_min_latency_interval
+### gluster_volume_profile_fop_min_latency_interval
 
 Interval based FOP min latency
 
@@ -635,7 +635,7 @@ Interval based FOP min latency
 | host       | Hostname or IP      |
 | fop        | File Operation name |
 
-#### gluster_volume_profile_fop_max_latency_interval
+### gluster_volume_profile_fop_max_latency_interval
 
 Interval based FOP max latency
 
@@ -647,7 +647,7 @@ Interval based FOP max latency
 | host       | Hostname or IP      |
 | fop        | File Operation name |
 
-#### gluster_volume_profile_fop_total_hits_on_aggregated_fops
+### gluster_volume_profile_fop_total_hits_on_aggregated_fops
 
 Cumulative total hits on aggregated FOPs like READ_WRIET_OPS, LOCK_OPS, INODE_OPS etc
 
@@ -659,7 +659,7 @@ Cumulative total hits on aggregated FOPs like READ_WRIET_OPS, LOCK_OPS, INODE_OP
 | host       | Hostname or IP      |
 | fop        | File Operation name |
 
-#### gluster_volume_profile_fop_total_hits_on_aggregated_fops_interval
+### gluster_volume_profile_fop_total_hits_on_aggregated_fops_interval
 
 Interval based total hits on aggregated FOPs like READ_WRIET_OPS, LOCK_OPS, INODE_OPS etc
 
@@ -671,9 +671,9 @@ Interval based total hits on aggregated FOPs like READ_WRIET_OPS, LOCK_OPS, INOD
 | host       | Hostname or IP      |
 | fop        | File Operation name |
 
-### collector.volume_status
+## collector.volume_status
 
-#### gluster_volume_status_brick_count
+### gluster_volume_status_brick_count
 
 Number of bricks for volume
 
@@ -682,7 +682,7 @@ Number of bricks for volume
 | instance    | Hostname of the gluster-prometheus instance providing this metric |
 | volume_name | Name of the volume                                                |
 
-#### gluster_volume_brick_status
+### gluster_volume_brick_status
 
 Per node brick status for volume
 
@@ -693,7 +693,7 @@ Per node brick status for volume
 | hostname    | Hostname of the brick                                             |
 | peer_id     | Uuid of the peer hosting this brick                               |
 
-#### gluster_volume_brick_port
+### gluster_volume_brick_port
 
 Brick port
 
@@ -704,7 +704,7 @@ Brick port
 | hostname    | Hostname of the brick                                             |
 | peer_id     | Uuid of the peer hosting this brick                               |
 
-#### gluster_volume_brick_pid
+### gluster_volume_brick_pid
 
 Brick pid
 
@@ -715,7 +715,7 @@ Brick pid
 | hostname    | Hostname of the brick                                             |
 | peer_id     | Uuid of the peer hosting this brick                               |
 
-#### gluster_volume_brick_total_inodes
+### gluster_volume_brick_total_inodes
 
 Brick total inodes
 
@@ -726,7 +726,7 @@ Brick total inodes
 | hostname    | Hostname of the brick                                             |
 | peer_id     | Uuid of the peer hosting this brick                               |
 
-#### gluster_volume_brick_free_inodes
+### gluster_volume_brick_free_inodes
 
 Brick free inodes
 
@@ -737,7 +737,7 @@ Brick free inodes
 | hostname    | Hostname of the brick                                             |
 | peer_id     | Uuid of the peer hosting this brick                               |
 
-#### gluster_volume_brick_total_bytes
+### gluster_volume_brick_total_bytes
 
 Brick total bytes
 
@@ -748,7 +748,7 @@ Brick total bytes
 | hostname    | Hostname of the brick                                             |
 | peer_id     | Uuid of the peer hosting this brick                               |
 
-#### gluster_volume_brick_free_bytes
+### gluster_volume_brick_free_bytes
 
 Brick free bytes
 
